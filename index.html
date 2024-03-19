@@ -11,11 +11,18 @@
 <body>
     <div id='app'>
         <div class="container">
-            <h1>Genera email</h1>
-            <button @click="emailGenerate">cliccami</button>
-            <ul>
-                <li v-for="email in emails" :class="{'visible': emails.length != 10}">{{email}}</li>
-            </ul>
+
+            <div class="left">
+                <h1>GENERA EMAIL</h1>
+                <button @click="emailGenerate">cliccami</button>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li v-for="email in emails" :class="{'visible': emails.length != 10}">{{email}}</li>
+                </ul>
+            </div>
+
         </div>
 
 

@@ -1,3 +1,54 @@
-.visible{
+.visible {
     visibility: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 4px;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e3e3;
+    padding: 30px;
+    display: flex;
+    min-height: 400px;
+
+    .left {
+        align-self: center;
+
+        width: 50%;
+        >h1 {
+            color: #53a8b6;
+            font-size: 50px;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        >button {
+            background-color: #53a8b6;
+            color: white;
+            border: none;
+            border-radius: 1rem;
+            padding: 5px 15px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        width: 50%;
+        align-self: center;
+        >ul {
+            list-style: none;
+
+            >li {
+                padding: 5px;
+                color: #53a8b6;
+            }
+        }
+    }
+
+
 }
