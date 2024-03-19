@@ -18,16 +18,26 @@ createApp({
                     this.emails.push(email)
                     return email
             });
+        },
+        
+        emailGenerate(counter){
+            if(counter = 9){
+                this.counter = 0
+                this.emails = []
+                
+                while(this.counter < 10){
+                    console.log(this.counter)
+                    this.createEmail()
+                    this.counter++    
+                }
+                
+            }
         }
     },
     mounted(){
-        
-        while (this.counter < 9) {
-            this.createEmail()
-            this.counter++
-        }
+
+        this.emailGenerate(this.counter)
         console.log(this.counter)
-        console.log(this.createEmail())
         console.log(this.emails)
     }
 }).mount("#app");
